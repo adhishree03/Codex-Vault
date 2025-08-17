@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .feature h3 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Welcome to the Library Management System</h1>
+        <p>The Library Management System is a Java-based project using JDBC and MySQL, designed to manage books, authors, languages, and user transactions efficiently.</p>
+        
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Core Functionalities</h3>
+                <ul>
+                    <li>Admin Login & Dashboard</li>
+                    <li>User Registration & Authentication</li>
+                    <li>Book Management (Add, View, Delete)</li>
+                    <li>Author & Language Management</li>
+                    <li>Borrow & Return Books</li>
+                    <li>Due Date Tracking</li>
+                    <li>Search Books by Title, Author, Genre</li>
+                    <li>Data Persistence with MySQL</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h3>Technical Details</h3>
+                <ul>
+                    <li>Built using Java, JDBC, and MySQL</li>
+                    <li>Java Database Connectivity</li>
+                    <li>Efficient Book and User Management</li>
+                    <li>Console-based UI</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Setup Instructions</h2>
+        <ul>
+            <li>Clone the Repository: <code>git clone https://github.com/your-repo/library-management.git</code></li>
+            <li>Import SQL Database: Run the provided SQL script in MySQL Workbench</li>
+            <li>Configure Database Connection in <code>ConnectionClass.java</code></li>
+            <li>Compile & Run: <code>javac Main.java</code> & <code>java Main</code></li>
+        </ul>
+        
+        <div class="cta">
+            <p>View the project on GitHub:</p>
+            <a href="https://github.com/Anugupta5102/Library-Management-System-" class="button">GitHub Repository</a>
+        </div>
+    </div>
+</body>
+</html>
